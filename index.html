@@ -20,7 +20,7 @@
     // load data
     let nodeSkema;
     fetch('./node-skema.json')
-    .then(res => nodeSkema = JSON.parse(res))
+    .then((response) => response.json())
     .then((json) => nodeSkema = json));
     console.log(nodeSkema);
     
