@@ -21,7 +21,7 @@
     let nodeSkema;
     fetch('./node-skema.json')
     .then((response) => response.json())
-    .then((json) => nodeSkema = json);
+    .then((json) => console.log(json));
     console.log(JSON.stringify(nodeSkema));
     
     // create an array with nodes
