@@ -15,9 +15,9 @@
 
 <script type="text/javascript">
     // load data
-    const response = await fetch('./node-skema.json');
-    const nodeSkema = await response.json();
-        
+    fetch('./node-skema.json')
+    .then(res => nodeSkema = res.json());
+    
     // create an array with nodes
     var nodes = new vis.DataSet(nodeSkema);
 
