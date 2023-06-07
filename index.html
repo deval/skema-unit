@@ -15,8 +15,7 @@
 
 <script type="text/javascript">
     // load data
-    fetch('./node-skema.json')
-    .then(res => nodeSkema = res.json());
+    let nodeSkema = JSON.parse(fs.readFileSync("./node-skema.json"));
     
     // create an array with nodes
     var nodes = new vis.DataSet(nodeSkema);
