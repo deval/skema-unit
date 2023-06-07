@@ -14,39 +14,42 @@
 <div id="mynetwork"></div>
 
 <script type="text/javascript">
-    let myarray = [{id:1, num:1},{id:2, num:2}];
-    console.log(JSON.stringify(myarray));
-    
-    // load data
-    
-    const response = await fetch('./node-skema.json');
-    const json = await response.json();
-    console.log(JSON.stringify(json))
-    let nodeSkema = json;
-    
-    // create an array with nodes
-    var nodes = new vis.DataSet(nodeSkema);
+    async function okay(){
+        let myarray = [{id:1, num:1},{id:2, num:2}];
+        console.log(JSON.stringify(myarray));
 
-    // create an array with edges
-    var edges = new vis.DataSet([
-        {from: 1, to: 3},
-        {from: 1, to: 2},
-        {from: 2, to: 4},
-        {from: 2, to: 5}
-    ]);
+        // load data
 
-    // create a network
-    var container = document.getElementById('mynetwork');
+        const response = await fetch('./node-skema.json');
+        const json = await response.json();
+        console.log(JSON.stringify(json))
+        let nodeSkema = json;
 
-    // provide the data in the vis format
-    var data = {
-        nodes: nodes,
-        edges: edges
-    };
-    var options = {};
+        // create an array with nodes
+        var nodes = new vis.DataSet(nodeSkema);
 
-    // initialize your network!
-    var network = new vis.Network(container, data, options);
+        // create an array with edges
+        var edges = new vis.DataSet([
+            {from: 1, to: 3},
+            {from: 1, to: 2},
+            {from: 2, to: 4},
+            {from: 2, to: 5}
+        ]);
+
+        // create a network
+        var container = document.getElementById('mynetwork');
+
+        // provide the data in the vis format
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
+        var options = {};
+
+        // initialize your network!
+        var network = new vis.Network(container, data, options);
+    }
+    okay();
 </script>
 </body>
 </html>
