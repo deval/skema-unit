@@ -15,9 +15,6 @@
 
 <script type="text/javascript">
     async function okay(){
-        let myarray = [{id:1, num:1},{id:2, num:2}];
-        console.log(JSON.stringify(myarray));
-
         // load data
         const response = await fetch('./node-skema.json');
         const nodeSkema = await response.json();
