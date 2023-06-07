@@ -22,7 +22,7 @@
     fetch('./node-skema.json')
     .then((response) => response.json())
     .then((json) => nodeSkema = json);
-    console.log(nodeSkema);
+    console.log(JSON.stringify(nodeSkema));
     
     // create an array with nodes
     var nodes = new vis.DataSet(nodeSkema);
