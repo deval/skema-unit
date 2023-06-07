@@ -18,11 +18,11 @@
     console.log(JSON.stringify(myarray));
     
     // load data
-    let nodeSkema;
-    fetch('./node-skema.json')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
-    console.log(JSON.stringify(nodeSkema));
+    
+    const response = await fetch('./node-skema.json');
+    const json = await response.json();
+    console.log(JSON.stringify(json))
+    let nodeSkema = json;
     
     // create an array with nodes
     var nodes = new vis.DataSet(nodeSkema);
