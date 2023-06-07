@@ -14,14 +14,12 @@
 <div id="mynetwork"></div>
 
 <script type="text/javascript">
+    // load data
+    const response = fetch('./node-skema.json');
+    const nodeSkema = response.json();
+        
     // create an array with nodes
-    var nodes = new vis.DataSet([
-        {id: 1, label: 'Node 1'},
-        {id: 2, label: 'Node 2'},
-        {id: 3, label: 'Node 3'},
-        {id: 4, label: 'Node 4'},
-        {id: 5, label: 'Node 5'}
-    ]);
+    var nodes = new vis.DataSet(nodeSkema);
 
     // create an array with edges
     var edges = new vis.DataSet([
