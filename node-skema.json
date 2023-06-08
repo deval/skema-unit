@@ -1,11 +1,11 @@
 [
-{"id":"SS.03.002.02","label":"Junior Programming"},
-{"id":"SS.03.003.02","label":"Programming"},
-{"id":"SS.03.004.00","label":"Junior Database Programming"},
-{"id":"SS.03.002.00","label":"Web Design"},
-{"id":"SS.03.002.01","label":"Junior Web Programming"},
-{"id":"SS.03.002.03","label":"Junior Programming"},
-{"id":"SS.03.003.03","label":"Programming"},
-{"id":"SS.03.001.01","label":"Basic Programming"},
-{"id":"SS.03.004.01","label":"Database Programming"}
+{"id":"SS.03.002.02","label":"Junior Programming","group":"g1"},
+{"id":"SS.03.003.02","label":"Programming","group":"g1"},
+{"id":"SS.03.004.00","label":"Junior Database Programming","group":"g1"},
+{"id":"SS.03.002.00","label":"Web Design","group":"g1"},
+{"id":"SS.03.002.01","label":"Junior Web Programming","group":"g1"},
+{"id":"SS.03.002.03","label":"Junior Programming","group":"g1"},
+{"id":"SS.03.003.03","label":"Programming","group":"g1"},
+{"id":"SS.03.001.01","label":"Basic Programming","group":"g1"},
+{"id":"SS.03.004.01","label":"Database Programming","group":"g1"}
 ]
